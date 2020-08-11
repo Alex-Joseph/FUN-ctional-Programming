@@ -13,6 +13,7 @@ const renderMessage = (result: number | string | object) =>
 
 describe('native pipe/compose functions', () => {
   test("myPipe can take a series of functions and return the expected value", () => {
+    // @ts-ignore Remove once function is implemented
     const result = myPipe(mult10, add1, renderMessage)(4);
 
     expect(result).toEqual("The result is: 41");
@@ -54,7 +55,7 @@ const assertDataIsNotMutated = () =>
 
 describe("structural sharing", () => {
   test("dateValidator does not mutate the data object", () => {
-    const result = dateValidator()(data);
+    const result = dateValidator(data);
 
     assertDataIsNotMutated();
 
