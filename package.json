@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "@babel/preset-typescript": "^7.10.4",
+    "@types/jest": "^26.0.9",
+    "jest": "^26.2.2",
+    "ramda": "^0.27.1",
+    "ts-jest": "^26.1.4",
+    "typescript": "^3.9.7"
+  },
+  "scripts": {
+    "t:w": "yarn jest test --watch"
+  }
+}
